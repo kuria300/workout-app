@@ -1,4 +1,4 @@
-# Workout Tracking API
+# Workout Flask API
 
 A professional Flask RESTful API designed to track gym workouts and exercises. This application uses a Many-to-Many relationship with an association class to record specific performance metrics (reps, sets, and duration) for every exercise performed within a workout.
 
