@@ -16,6 +16,9 @@ A professional Flask RESTful API designed to track gym workouts and exercises. T
    ```bash
    git clone <your-repository-url>
    cd workout-app
+   pipenv sync 
+   pipenv shell
+   python <entrypoint>
 
 ## Database Initialization
    
