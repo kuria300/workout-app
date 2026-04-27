@@ -1,10 +1,8 @@
 # Workout Backend API
 
-A professional Flask-based application for tracking workouts and exercises, featuring a REST API for CRUD operations on workouts and exercises, and a seed script to populate the database with sample data.
-
 ## Project Description
 
-This system provides a comprehensive solution for managing personal workout routines. It allows users to track exercises, The application includes a seed script to populate the database with sample exercises and workouts for testing and development purposes.
+A professional Flask-based application for tracking workouts and exercises, featuring a REST API for CRUD operations on workouts and exercises, and a seed script to populate the database with sample data.
 
 ### Key Features
 - **REST API**: Full CRUD operations for exercises and workouts
@@ -19,7 +17,9 @@ This system provides a comprehensive solution for managing personal workout rout
 Follow these steps to set up the project locally:
 
 1. **Clone the repository** then navigate to the project directory.
-
+   ```bash
+   git clone (https://github.com/username/repo.git)
+   ```
 2. **Install dependencies using Pipenv**:
    ```bash
    pipenv install or pipenv sync
@@ -30,9 +30,10 @@ Follow these steps to set up the project locally:
    pipenv shell
    ```
 
-4. **Set up environment variables or use the config.py file**:
+4. **Use the Config.py file or Set up environment variables**:
    - Create a `.env` file in the root directory.
    - Add any required environment variables, such as database URI.
+   - Alternative use Config.py already provided
    - Example:
      ```
      DATABASE_URL=sqlite:///instance/app.db
@@ -41,9 +42,7 @@ Follow these steps to set up the project locally:
 5. **Set up the database**:
    - Initialize and apply migrations:
      ```bash
-     flask db init  # only use when making migrations
-     flask db migrate
-     flask db upgrade
+     flask db upgrade 
      ```
 
 6. **Populate the database with sample data**:
@@ -57,7 +56,7 @@ To start the Flask development server:
 
 1. Ensure you are in the virtual environment (`pipenv shell`).
 
-2. Set the required environment variables:
+2. Set the required environment variables (optional):
    ```bash
    export FLASK_APP=app.py
    export FLASK_ENV=development
@@ -65,14 +64,14 @@ To start the Flask development server:
 
 3. Run the application:
    ```bash
-   flask run (if you already set required env in step 2) or python app.py
+   flask run (if you already set required env above STEP 2) or python app.py
    ```
 
 The server will start on `http://127.0.0.1:5000` by default.
 
 ## API Endpoints
 
-The following REST API endpoints are available for workout and exercise management (test with postman or curl):
+The following REST API endpoints are available for workout and exercise management -test with postman (recommended) or curl :
 
 ### Exercise CRUD Operations
 - **GET /exercises** - Retrieve all exercises
@@ -140,6 +139,15 @@ To run the seed script:
 ```bash
 python app/seed.py
 ```
+## Contributors
+
+Eugene Kuria Maina
+
+## Contributing
+
+Contributions are always welcome!
+
+Please adhere to this project's `code of conduct`.
 
 ## License
 
